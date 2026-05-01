@@ -102,7 +102,7 @@ trait Versionable
 
         $userId = self::resolveAuditUserId();
 
-        $version = new Version();
+        $version = new Version;
         $version->fill([
             'payload' => $payload,
             'changes' => $diff,
